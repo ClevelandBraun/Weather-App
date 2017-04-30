@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+
+	    <meta charset="utf-8">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="description" content="Weather App by Lukas">
+	    <meta name="author" content="Lukas">
+	    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	    <title>Weather by Lukas</title>
+
+	    <!-- Bootstrap Core CSS -->
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	    <!--Custom CSS-->
+	    <link href="css/style.css" rel="stylesheet">
+
+	    <!--Icons-->
+	    <link rel="stylesheet" type="text/css" href="css/weather-icons.min.css">
+	   	<link rel="stylesheet" type="text/css" href="css/weather-icons-wind.min.css">
+
+	</head>
+	<body>
+
+		<!--Nav Bar -->	
+		<nav class="navbar navbar-default">
+			<div class="container-fluid">
+		    	<div class="navbar-header">
+				    <a class="navbar-brand navbar-form" href="#">
+				   		<img src="images/logo.jpg" alt="logo" class="img-circle">
+				    </a>
+				    <ul class="nav navbar-nav">
+				    	<li class="navbar-brand navbar-form"><a href="#"><span>The Weather Guy</span></a></li>
+				    </ul>
+				</div>
+				<ul id="search" class="nav navbar-nav navbar-right navbar-form">
+					<form class="navbar-left">
+				   		<span>Tell me the weather in:</span>
+				   		<div class="form-group">
+				       		<input id="city" type="text" class="form-control" placeholder="London">
+				       	</div>
+				    </form>
+				</ul>
+			</div>
+		</nav>
+
+		<!--Content-->
+		<div class="container-fluid">
+			<div id="info-block" class="col-md-12">
+				<h1 id="location"></h1>
+				<div id="today" class="col-md-4">
+					<h2><span id="date"></span></h2>
+					<i id="icon_t-container"></i>
+					<div class="metrics">
+						<i class="wi wi-thermometer-exterior"></i>
+						<h3 id="temp_t"></h3>
+						<br>
+						<i id="wind_t_dir"></i>
+						<h3 id="wind_t"></h3>
+						<br>
+						<i class="wi wi-humidity"></i>
+						<h3 id="humid_t"></h3>
+					</div>
+				</div>
+				<div id="forecast" class="col-md-8">
+					<h2>5-day Forecast</h2>
+					<div>
+						<div class="col-md-2 forecast-box">
+							<h4><span id="day-one"></span></h4>
+							<i id="icon_1-container"></i>
+							<br>
+							<i class="wi wi-thermometer-exterior"></i>
+							<h5 id="temp_1"></h5>
+							<br>
+							<i id="wind_1_dir"></i>
+							<h5 id="wind_1"></h5>
+							<br>
+							<i class="wi wi-humidity"></i>
+							<h5 id="humid_1"></h5>
+						</div>
+						<div class="col-md-2 forecast-box">
+							<h4><span id="day-two"></span></h4>
+							<i id="icon_2-container" class="thumb-fore"></i>
+							<br>
+							<i class="wi wi-thermometer-exterior"></i>
+							<h5 id="temp_2"></h5>
+							<br>
+							<i id="wind_2_dir"></i>
+							<h5 id="wind_2"></h5>
+							<br>
+							<i class="wi wi-humidity"></i>
+							<h5 id="humid_2"></h5>
+						</div>
+						<div class="col-md-2 forecast-box">
+							<h4><span id="day-three"></span></h4>
+							<i id="icon_3-container"></i>
+							<br>
+							<i class="wi wi-thermometer-exterior"></i>
+							<h5 id="temp_3"></h5>
+							<br>
+							<i id="wind_3_dir"></i>
+							<h5 id="wind_3"></h5>
+							<br>
+							<i class="wi wi-humidity"></i>
+							<h5 id="humid_3"></h5>
+						</div>
+						<div class="col-md-2 forecast-box">
+							<h4><span id="day-four"></span></h4>
+							<i id="icon_4-container"></i>
+							<br>
+							<i class="wi wi-thermometer-exterior"></i>
+							<h5 id="temp_4"></h5>
+							<br>
+							<i id="wind_4_dir"></i>
+							<h5 id="wind_4"></h5>
+							<br>
+							<i class="wi wi-humidity"></i>
+							<h5 id="humid_4"></h5>
+						</div>
+						<div class="col-md-2 forecast-box">
+							<h4><span id="day-five"></span></h4>
+							<i id="icon_5-container"></i>
+							<br>
+							<i class="wi wi-thermometer-exterior"></i>
+							<h5 id="temp_5"></h5>
+							<br>
+							<i id="wind_5_dir"></i>
+							<h5 id="wind_5"></h5>
+							<br>
+							<i class="wi wi-humidity"></i>
+							<h5 id="humid_5"></h5>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>	
+
+		<!--JavaScript-->
+			<!--jQuery-->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+			<!--API-->
+		<script type="text/javascript" src="js/api.js"></script>
+
+			<!--Bootstrap-->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	</body>
+</html>
+
+	
+ 	

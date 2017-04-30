@@ -1,0 +1,131 @@
+body{
+	background: url("http://images.wisegeek.com/sunshine-through-tree.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+  	background-size: cover;
+  	height: 100vh;
+  	color: white;
+}
+
+
+/*Navbar Styling*/
+#search{
+	padding-top: 8px;
+}
+
+.navbar-form{
+	border: none;
+}
+
+.navbar{
+	border: none;
+}
+
+nav a{
+	color: white!important;
+}
+
+nav div{
+	background: rgba(21, 25, 93, 1)
+}
+
+nav a img{
+	height: 100%; 
+	display: block;
+    margin: 0 auto;
+}
+
+/*Content Styling*/
+#info-block{
+	background: rgba(21, 25, 93, 0.5);	
+	opacity: 10%;
+	height: 
+	color: white;
+	padding: 1%;
+	width: 100%;
+}
+
+.row{	
+	padding: 2%;
+	padding-top: 0.5%;
+}
+
+#today{
+	border-right: solid white;
+	padding: 1%;
+	text-align: center;
+}
+
+@media (max-width: 1024px) {
+    #today {
+    	border-bottom: solid white;
+    	border-right: none;
+	}
+}
+
+#forecast{
+	padding: 1%;
+	padding-left: 3%;
+}
+
+.forecast-box{
+	display: inline-block;
+	text-align: center;
+ 	display: inline-block;
+ 	vertical-align: top;   
+ 	text-align:center;
+ 	margin:1%;    
+}
+
+i{
+	font-size: 50px;
+}
+
+.forecast-box i, h5{
+	display: inline-block;
+}
+
+.forecast-box i{
+	font-size: 30px;
+	margin-top: 10px;
+}
+
+.forecast-thumb{
+	font-size: 50px;
+}
+
+.metrics h3{
+	display: inline-block;
+}
+
+#today i{
+	font-size: 100px;
+	margin: 0px;
+}
+
+#today .metrics i{
+	font-size: 40px;
+	display: inline-block;
+	margin: 15px;
+}
+
+#icon_1-container{
+	font-size: 60px;
+}
+
+#icon_2-container{
+	font-size: 60px;
+}
+
+#icon_3-container{
+	font-size: 60px;
+}
+
+#icon_4-container{
+	font-size: 60px;
+}
+
+#icon_5-container{
+	font-size: 60px;
+}
